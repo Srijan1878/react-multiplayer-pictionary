@@ -1,0 +1,13 @@
+.activeWord {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  background: #eee;
+  border-radius: 12px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  font-size: clamp(12px, 2vw, 20px);
+  height: fit-content;
+}

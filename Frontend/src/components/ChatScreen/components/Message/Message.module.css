@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.myMessageContainer > p, .messageContainer > p {
+  margin-block: 4px;
+  padding-inline: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.messageContainer > p:last-child {
+    position: absolute;
+    font-size: 10px;
+    font-family: sans-serif;
+    left: 0%;
+    color: #222;
+  }
+  .myMessageContainer > p:last-child{
+    position: absolute;
+    font-size: 10px;
+    font-family: sans-serif;
+    right: 0%;
+    color: #222;
+  }
+.messageContainer {
+  background: rgb(66, 65, 65);
+  max-width: 60%;
+  color: #eee;
+  border-radius: 12px 5px 5px 5px;
+  padding: 1px;
+  margin-block: 4px;
+  position: relative;
+  background-color: black;
+}
+.myMessageContainer{
+    background: #0b2c49;
+    max-width: 60%;
+    color: #eee;
+    border-radius: 5px 12px 5px 5px;
+    padding: 1px;
+    margin-block: 4px;
+    margin-left: auto;
+    position: relative;
+    background-color: var(--primary-background);
+}

@@ -1,0 +1,68 @@
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  min-height: 400px;
+  max-height: 50%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-small);
+  border-radius: 16px;
+  z-index: 5;
+  z-index: 10 !important;
+  overflow: hidden;
+}
+.ModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow-y: scroll;
+  width: 90%;
+}
+.ModalContent::-webkit-scrollbar {
+  display: none;
+}
+.buttonsContainer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+}
+.buttonsContainer > div  {
+  margin-inline: var(--spacing-small);
+  transform: scaleX(0.75) rotate(2deg);
+}
+.translatedLeaderboardAnimationContainer {
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+.leaderboardAnimationContainer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .Modal {
+    width: 80%;
+    height: 60%;
+  }
+  .buttonsContainer > div  {
+    margin-inline: var(--spacing-small);
+    transform: scaleX(0.95) rotate(2deg);
+  }
+}

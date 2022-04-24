@@ -1,0 +1,55 @@
+.pageWrapper {
+  width: calc(100vw - var(--spacing-large) * 2);
+  height: calc(100vh - var(--spacing-large) * 2);
+  padding: var(--spacing-large);
+  position: relative;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  overflow: hidden;
+  background-image: image-set(
+    url("../Assets/backImg.webp") 1x,
+    url("../Assets/backImg.jpg") 2x
+  );
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes bg-toggle {
+  0% {
+    fill: #003d55;
+  }
+  20% {
+    fill: #006e78;
+  }
+  40% {
+    fill: #00a182;
+  }
+  60% {
+    fill: #83d178;
+  }
+  80% {
+    fill: #f9f871;
+  }
+  100% {
+    fill: #fddc5c;
+  }
+}
+.pageWrapper > svg > path,
+.pageWrapper > svg > g {
+  transition: all 0.5s ease-in-out;
+  fill: var(--secondary-background);
+}
+
+@keyframes misc-animation {
+  from {
+    fill: var(--secondary-background);
+  }
+  to {
+    fill: #fddc5c;
+  }
+}

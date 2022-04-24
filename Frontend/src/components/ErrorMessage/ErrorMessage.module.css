@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+.errorMessagePopup {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(224, 42, 42, 0.692);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+.errorMessagePopup > p {
+  color: #eee;
+  font-size: 20px;
+  margin-block: 0;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.hiddenErrorMessagePopup{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(224, 42, 42, 0.692);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+}

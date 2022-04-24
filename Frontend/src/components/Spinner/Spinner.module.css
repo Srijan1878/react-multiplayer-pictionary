@@ -1,0 +1,33 @@
+.loaderAndTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 6;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: fit-content;
+}
+.loaderAndTextWrapper > h4 {
+  z-index: 6;
+  font-family: var(--font-family-secondary);
+  color: var(--secondary-background);
+  text-shadow: -3px 0.5px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+}
+.loaderAndTextWrapper > div > svg {
+  z-index: 6;
+  width: 100px !important;
+  height: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

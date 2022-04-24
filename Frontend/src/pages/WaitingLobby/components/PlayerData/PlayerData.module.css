@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --minimal-spacing: 4px;
+  --secondary-background-rgba: rgba(166, 70, 119, 0.25);
+  --primary-background-translucent: rgba(0, 110, 120, 0.35);
+}
+.singlePlayerContainer > h2 {
+  margin-block: var(--spacing-extra-small);
+  font-family: "Pacifico", cursive;
+  margin-inline: 6px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+.singlePlayerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singlePlayerContainer > h2 {
+  margin-block-end: 2px;
+  font-size: 16px;
+}
+.singlePlayerContainer > p {
+  margin: 0%;
+  margin-bottom: 4px;
+  color: var(--secondary-background);
+  font-weight: bold;
+}
+.stackedSinglePlayerContainer {
+  cursor: pointer;
+  max-height: 75%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;  
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  max-width: 150px;
+  min-width: 80px;
+}
+.stackedSinglePlayerContainer::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(to right, #1a9abe, rgba(166, 70, 119, 0.5));
+  opacity: 0.5;
+  border-radius: inherit;
+}
+.myCard {
+  border: 2px solid black;
+}
+.stackedSinglePlayerContainer > h2 {
+  margin-block: 0;
+  font-family: var(--font-family-secondary);
+  margin-inline: var(--minimal-spacing);
+  font-size: clamp(12px, 2vw, 18px);
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  transform: translateY(-60%);
+  color: white;
+  z-index: 2;
+}
+.stackedSinglePlayerContainer > div {
+  z-index: 2;
+}
+.noOverlowCard {
+  overflow-y: visible !important;
+}
+.stackedSinglePlayerContainer > p {
+  font-family: var(--font-family-secondary);
+  margin-block: var(--minimal-spacing) !important;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+}
+.animationOverlayContainer {
+  position: absolute;
+  inset: 0px;
+  z-index: 1 !important;
+  opacity: 1;
+}

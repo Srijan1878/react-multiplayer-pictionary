@@ -1,0 +1,34 @@
+:root {
+  /*radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
+  /* Colors */
+  --primary-background: #006e78;
+  --secondary-background: #0ADA91;
+  --btn-primary: #00a182;
+  --secondary-background-dark: #1b996d;
+  --font-primary-color: #eee;
+  --primary-border: #eee;
+
+  /*Spacing*/
+  --spacing-extra-small: 8px;
+  --spacing-small: 16px;
+  --spacing-medium: 24px;
+  --spacing-large: 32px;
+
+  /* Fonts */
+  --font-size-extra-small: 12px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-extra-large: 24px;
+  --font-family-primary: "Pacifico", cursive;
+  --font-family-secondary: "Mochiy Pop P One", sans-serif;
+
+  /*border*/
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+}
+
+.canvas {
+  transition: all 0.5s ease-in-out;
+}

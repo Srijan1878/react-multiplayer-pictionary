@@ -1,0 +1,17 @@
+.scrollButton {
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: black;
+    opacity: 0.4;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 8px 32px 0 var(--primary-background);
+    transition: all 0.3s linear;
+    z-index: 6;
+}
+.scrollButton:hover{
+    opacity: 0.8;
+}

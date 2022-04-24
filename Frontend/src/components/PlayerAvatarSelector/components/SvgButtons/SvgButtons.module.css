@@ -1,0 +1,17 @@
+.leftButton,
+.rightButton {
+  cursor: pointer;
+  transform: translateY(25%);
+}
+.rightButton {
+  transform: rotate(180deg) translateY(-25%);
+}
+@media screen and (max-width: 1368px) {
+  .leftButton,
+  .rightButton {
+    transform: scale(0.8) translateY(25%);
+  }
+  .rightButton {
+    transform: rotate(180deg) scale(0.8) translateY(-25%);
+  }
+}

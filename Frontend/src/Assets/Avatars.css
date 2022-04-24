@@ -1,0 +1,29 @@
+.avatar {
+  margin-inline: var(--spacing-small);
+  animation: jiggle 2s infinite alternate;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translateY(0) scale(0.95);
+  }
+  100% {
+    transform: translateY(10px) scale(1);
+  }
+}
+
+@media screen and (max-width: 1368px) {
+  .avatar {
+    width: 60px;
+    height: 60px;
+    animation: jiggle-diminished 1.5s infinite alternate;
+  }
+  @keyframes jiggle-diminished {
+    0% {
+      transform: translateY(0) scale(0.95);
+    }
+    100% {
+      transform: translateY(6px) scale(1);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.newWordPopupOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.005);
+    backdrop-filter: blur(4px);
+    z-index: 6;
+  }

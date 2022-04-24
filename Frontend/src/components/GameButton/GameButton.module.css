@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+  --button-shade-one: #45e4ac;
+  --button-shade-three: #0affa9;
+  --button-shade-two: #e7e796;
+}
+
+.GameButton {
+  background: var(--button-shade-one);
+  border: none;
+  font-family: var(--font-family-secondary);
+  cursor: pointer;
+  z-index: 99;
+  transition: all 0.2s linear;
+  color: black;
+  padding: 0.5rem;
+  margin-block: var(--spacing-large);
+  position: relative;
+  border-radius: 14px;
+  z-index: 1;
+  width: 120px;
+  height: 40px;
+  max-width: 40%;
+  min-width: 60px;
+  border-bottom: 1px solid var(--button-shade-three);
+}
+.GameButton::after {
+  content: attr(data-text);
+  position: absolute;
+  top: -25%;
+  z-index: -1;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--button-shade-three);
+  background: var(--secondary-background);
+  border-radius: 12px;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.GameButton:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  top: -15%;
+  z-index: -1;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--button-shade-three);
+  background: var(--secondary-background);
+  border-radius: 12px;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,39 @@
+.speakerContainer {
+  position: fixed;
+  bottom: 10px;
+  left: 0vw;
+  padding-left: 1vw;
+  cursor: pointer;
+  z-index: 99;
+}
+.speakerSvg {
+  transform: rotate(-30deg);
+  filter: drop-shadow(3px 3px 2px var(--primary-background));
+}
+
+.speakerContainer::after {
+  content: "";
+  width: 4px;
+  height: 0%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  background-color: black;
+  transition: all 0.35s ease-in-out;
+  opacity: 0;
+}
+
+.muted::after {
+  content: "";
+  width: 2px;
+  border: 2px solid white;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  background-color: #0ADA91;
+  transition: all 0.35s ease-in-out;
+  opacity: 1;
+}

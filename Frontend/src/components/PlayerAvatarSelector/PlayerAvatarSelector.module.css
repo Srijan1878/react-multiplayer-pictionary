@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+.playerAvatarSelector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playerAvatarSelector > h2 {
+  margin: 0%;
+  font-family: var(--font-family-secondary);
+  color: white;
+  letter-spacing: 4px;
+  font-size: clamp(18px, 1.8vw, 24px);
+  margin-bottom: min(1.6vh, var(--spacing-small));
+  text-shadow: -4px 3px black;
+}
+.avartarsFlexWrapper {
+  margin-block: min(2vh, var(--spacing-small));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+.avartarsFlexWrapper::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 45%;
+  height: 4px;
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(3px);
+  animation: jiggle-shadow 2s infinite alternate;
+}
+@keyframes jiggle-shadow {
+  from {
+    bottom: -30px;
+    transform: scaleX(0.9) translateX(-50%);
+  }
+  to {
+    bottom: -20px;
+    transform: scaleX(1.15) translateX(-42%);
+  }
+}
+@media screen and (max-width: 1368px) {
+  .avartarsFlexWrapper {
+    width: 100%;
+  }
+  .avartarsFlexWrapper::after{
+    width: 25%;
+    animation: jiggle-shadow-diminished 1.5s infinite alternate;
+  }
+  @keyframes jiggle-shadow-diminished {
+    from {
+      bottom: -26px;
+      transform: scaleX(0.9) translateX(-50%);
+    }
+    to {
+      bottom: -20px;
+      transform: scaleX(1.15) translateX(-42%);
+    }
+  }
+}

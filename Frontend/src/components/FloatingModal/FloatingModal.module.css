@@ -1,0 +1,9 @@
+.clockContainer > p {
+  color: white;
+  letter-spacing: 4px;
+  text-shadow: 0 0 7px #1a9abe, 0 0 5px #1a9abe;
+  font-family: var(--font-family-secondary);
+  font-size: clamp(12px, 1.75vw, 18px);
+  width: max-content;
+  max-width: 200%;
+}

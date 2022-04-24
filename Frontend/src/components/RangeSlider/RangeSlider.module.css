@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+:root {
+  --secondary-background-dark-thumb: #45e4ac;
+}
+
+.rangeSliderLabel {
+  font-size: 20px;
+  color: white;
+  font-size: clamp(14px, 1.6vw, 20px);
+  font-family: var(--font-family-secondary);
+  margin-block: min(2vh, var(--spacing-small));
+}
+.customRangeSlider {
+  -webkit-appearance: none;
+  border: 4px solid var(--secondary-background-dark);
+  border-radius: 15px;
+  transition: all 0.3s linear;
+  flex: 1;
+}
+.customRangeSlider:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+.customRangeSlider:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+}
+.customRangeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--secondary-background-dark-thumb);
+  cursor: pointer;
+}
+.rangeSliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+.rangeSliderContainer > p {
+  background: var(--secondary-background-dark);
+  padding: 4px 8px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px black;
+  transform: translateX(50%);
+  z-index: 9;
+  margin-block: min(1vw, var(--spacing-extra-small));
+}

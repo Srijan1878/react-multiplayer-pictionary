@@ -1,0 +1,12 @@
+.roomCreationContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkboxContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}

@@ -1,0 +1,22 @@
+.playerPointContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - var(--spacing-small));
+  font-family: var(--font-family-secondary);
+  background-color: rgba(247, 247, 168, 0.4);
+  border: 1px solid var(--primary-background);
+  z-index: 99;
+  margin-block: var(--spacing-extra-small);
+  padding-inline: var(--spacing-small)
+}
+.playerPointContainer > p {
+  margin-block: var(--spacing-extra-small);
+}
+.playerPointContainer > p:last-child {
+  color: var(--secondary-background);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
+  font-size: var(--font-size-large);
+}

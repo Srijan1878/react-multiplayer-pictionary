@@ -1,0 +1,10 @@
+.messagesContainer{
+    width: 95%;
+    height: 85%;
+    max-height: 85%;
+    overflow-y: auto;
+    padding-inline: var(--spacing-extra-small);
+}
+.messagesContainer::-webkit-scrollbar {
+    width: 0.5em;
+}
